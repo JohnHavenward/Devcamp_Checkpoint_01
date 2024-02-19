@@ -1,0 +1,95 @@
+body {
+      display: grid;
+      background-color: whitesmoke;
+      padding: 50px;
+      
+      & > div {
+            margin: auto;
+      }
+      
+      & h3 {
+            text-align: center;
+            margin-top: 50px;
+      }
+}
+
+.gridOne {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      width: 100%;
+      background-color: lightgray;
+}
+
+.gridTwo {
+      display: grid;
+      grid-template-columns: 1fr 1fr 2fr;
+      width: 100%;
+      
+      .child-red {
+            background-color: red;
+      }
+      .child-blue {
+            background-color: blue;
+      }
+      .child-yellow {
+            background-color: yellow;
+      }
+}
+
+.gridThree {
+      display: grid;
+      grid-template-rows: 1fr 3fr;
+      height: 300px;
+      width: 500px;
+      margin: auto;
+      background-color: lightgray;
+      
+      .first-child {
+            height: 75px;
+      }
+      
+      .second-child img {
+            height: 225px;
+            width: 500px;
+            object-fit: cover;
+      }
+}
+
+.gridFour {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      width: 500px;
+      background-color: green;
+      
+      #special-div {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+      }
+}
+
+.gridFive {
+      display: grid;
+      grid-template-rows: 1fr 1fr;
+      width: 500px;
+      background-color: lightgray;
+      
+      #another-special-div {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            
+            & img {
+                  height: 200px;
+                  width: 200px;
+                  object-fit: cover;
+            }
+      }
+}
+
+.gridSix {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      width: 500px;
+      background-color: lightgray;
+      
+      font-family: "Germania One", system-ui;
+}
